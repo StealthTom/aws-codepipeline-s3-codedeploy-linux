@@ -1,3 +1,8 @@
+<?php
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,7 +35,8 @@
     <h2>You have successfully created a pipeline that retrieved this source application from an Amazon S3 bucket and deployed it 
 	to three Amazon EC2 instances using AWS CodeDeploy.</h2>
     <p>For next steps, read the AWS CodePipeline Documentation.</p>
-    <p>Added a new line here for demo purposes - Boyd, 09/29/2021</p>
+    <p>Added a new line here for demo purposes - Boyd, 09/28/2021</p>
+    <p>Added a few lines to disable page caching - Boyd, 09/29/2021</p>
   </div>
 </body>
 </html>
